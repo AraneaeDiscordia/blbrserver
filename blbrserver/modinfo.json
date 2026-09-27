@@ -1,0 +1,14 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "blbrserver",
+    "name": "Black Briar Server",
+    "authors": [
+        "AraneaeDiscordia"
+    ],
+    "description": "Changes, fixes, and customizations for the Black Briar RP Server.",
+    "version": "0.0.1",
+    "dependencies": {
+      "game": "*"
+    }
+}

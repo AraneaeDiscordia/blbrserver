@@ -1,0 +1,136 @@
+[
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/bartka",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/claymore",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/expandedbow",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*-ranger": "long",
+      "*-yager": "recurve"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/expandedbow",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "bow" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/halberd",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "halberd" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/hornybows",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*-nomad-*": "recurve",
+      "*-yagermaster-*": "recurve"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/hornybows",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "bow" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/khopesh",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/mace",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "mace", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/odachi",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "twohanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/pike",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "pike" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/polehammer",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "spear" ] // not actually a spear, not sure if polehammer exists as designation
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/rapier",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/seax",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "knife", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/villager/pitchfork",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "spear" ] // not actually a spear, renders correctly
+  },
+  {
+    "side": "Server",
+    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "file": "spearexpantion:itemtypes/tool/villager/scythespear",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "spear" ]
+  }
+]

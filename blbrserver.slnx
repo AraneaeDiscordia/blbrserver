@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="blbrserver/blbrserver.csproj" />
+  <Project Path="CakeBuild/CakeBuild.csproj" />
+</Solution>

@@ -5,7 +5,7 @@
     "file": "spearexpantion:itemtypes/tool/bartka",
     "op": "addMerge",
     "path": "/tags",
-    "value": [ "sword", "onehanded" ]
+    "value": [ "axe", "onehanded" ]
   },
   {
     "side": "Server",
@@ -13,7 +13,7 @@
     "file": "spearexpantion:itemtypes/tool/claymore",
     "op": "addMerge",
     "path": "/tags",
-    "value": [ "sword", "onehanded" ]
+    "value": [ "sword", "twohanded" ]
   },
   {
     "side": "Server",

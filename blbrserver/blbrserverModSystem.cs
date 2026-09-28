@@ -5,7 +5,7 @@ using Vintagestory.API.Server;
 
 namespace blbrserver
 {
-    public class blbrserverModSystem : ModSystem
+    public class BlbrserverModSystem : ModSystem
     {
         // Called on server and client
         // Useful for registering block/entity classes on both sides

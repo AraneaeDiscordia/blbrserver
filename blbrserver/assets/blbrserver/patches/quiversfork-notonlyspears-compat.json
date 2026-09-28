@@ -1,7 +1,7 @@
 [
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/bartka",
     "op": "addMerge",
     "path": "/tags",
@@ -9,7 +9,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/claymore",
     "op": "addMerge",
     "path": "/tags",
@@ -17,7 +17,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/expandedbow",
     "op": "add",
     "path": "/attributes/InSheathVariantCodeByType",
@@ -28,7 +28,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/expandedbow",
     "op": "addMerge",
     "path": "/tags",
@@ -36,7 +36,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/halberd",
     "op": "addMerge",
     "path": "/tags",
@@ -44,7 +44,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/hornybows",
     "op": "add",
     "path": "/attributes/InSheathVariantCodeByType",
@@ -55,7 +55,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/hornybows",
     "op": "addMerge",
     "path": "/tags",
@@ -63,7 +63,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/khopesh",
     "op": "addMerge",
     "path": "/tags",
@@ -71,7 +71,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/mace",
     "op": "addMerge",
     "path": "/tags",
@@ -79,7 +79,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/odachi",
     "op": "addMerge",
     "path": "/tags",
@@ -87,7 +87,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/pike",
     "op": "addMerge",
     "path": "/tags",
@@ -95,7 +95,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/polehammer",
     "op": "addMerge",
     "path": "/tags",
@@ -103,7 +103,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/rapier",
     "op": "addMerge",
     "path": "/tags",
@@ -111,7 +111,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/seax",
     "op": "addMerge",
     "path": "/tags",
@@ -119,7 +119,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/villager/pitchfork",
     "op": "addMerge",
     "path": "/tags",
@@ -127,7 +127,7 @@
   },
   {
     "side": "Server",
-    "dependsOn": [ { "modid": "spearexpantion" } ],
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/villager/scythespear",
     "op": "addMerge",
     "path": "/tags",

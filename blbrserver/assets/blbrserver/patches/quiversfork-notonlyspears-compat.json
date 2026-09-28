@@ -6,6 +6,7 @@
     "op": "addMerge",
     "path": "/tags",
     "value": [ "axe", "onehanded" ]
+    // broken
   },
   {
     "side": "Server",
@@ -74,6 +75,33 @@
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/mace",
     "op": "addMerge",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-blackbronze": "mace_blackbronze",
+      "*-iron": "mace_iron",
+      "*-meteoriciron": "mace_meteoriciron",
+      "*-steel": "mace_steel",
+      "*": "mace_iron"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
+    "file": "spearexpantion:itemtypes/tool/mace",
+    "op": "addMerge",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*-*bronze": "mace_bronze",
+      "*-*iron": "mace_iron",
+      "*-steel": "mace_steel",
+      "*": "mace_iron"
+    }
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
+    "file": "spearexpantion:itemtypes/tool/mace",
+    "op": "addMerge",
     "path": "/tags",
     "value": [ "mace", "onehanded" ]
   },
@@ -99,7 +127,7 @@
     "file": "spearexpantion:itemtypes/tool/polehammer",
     "op": "addMerge",
     "path": "/tags",
-    "value": [ "spear" ] // not actually a spear, not sure if polehammer exists as designation
+    "value": [ "spear" ] 
   },
   {
     "side": "Server",
@@ -123,7 +151,7 @@
     "file": "spearexpantion:itemtypes/tool/villager/pitchfork",
     "op": "addMerge",
     "path": "/tags",
-    "value": [ "spear" ] // not actually a spear, renders correctly
+    "value": [ "spear" ]
   },
   {
     "side": "Server",

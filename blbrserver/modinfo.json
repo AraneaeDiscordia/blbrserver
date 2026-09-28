@@ -9,6 +9,7 @@
     "description": "Changes, fixes, and customizations for the Black Briar RP Server.",
     "version": "0.0.1",
     "dependencies": {
-      "game": "*"
+      "game": "*",
+      "jsonpatcheslib":  "*"
     }
 }

@@ -1,6 +1,6 @@
 [
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/bartka",
     "op": "addMerge",
@@ -23,7 +23,7 @@
     }
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/claymore",
     "op": "addMerge",
@@ -31,7 +31,7 @@
     "value": [ "sword", "twohanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/expandedbow",
     "op": "add",
@@ -42,7 +42,7 @@
     }
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/expandedbow",
     "op": "addMerge",
@@ -50,7 +50,7 @@
     "value": [ "bow" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/halberd",
     "op": "addMerge",
@@ -58,7 +58,7 @@
     "value": [ "halberd" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/hornybows",
     "op": "add",
@@ -69,7 +69,7 @@
     }
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/hornybows",
     "op": "addMerge",
@@ -77,7 +77,7 @@
     "value": [ "bow" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/khopesh",
     "op": "addMerge",
@@ -85,7 +85,7 @@
     "value": [ "sword", "onehanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/mace",
     "op": "addMerge",
@@ -99,7 +99,7 @@
     }
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/mace",
     "op": "addMerge",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/mace",
     "op": "addMerge",
@@ -120,7 +120,7 @@
     "value": [ "mace", "onehanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/odachi",
     "op": "addMerge",
@@ -128,7 +128,7 @@
     "value": [ "sword", "twohanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/pike",
     "op": "addMerge",
@@ -136,7 +136,7 @@
     "value": [ "pike" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/polehammer",
     "op": "addMerge",
@@ -144,7 +144,7 @@
     "value": [ "spear" ] 
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/rapier",
     "op": "addMerge",
@@ -152,7 +152,7 @@
     "value": [ "sword", "onehanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/seax",
     "op": "addMerge",
@@ -160,7 +160,7 @@
     "value": [ "knife", "onehanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/villager/pitchfork",
     "op": "addMerge",
@@ -168,7 +168,7 @@
     "value": [ "spear" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/villager/scythespear",
     "op": "addMerge",

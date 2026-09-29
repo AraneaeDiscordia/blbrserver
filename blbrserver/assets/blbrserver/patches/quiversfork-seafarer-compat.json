@@ -1,0 +1,35 @@
+[
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "quiversfork" },{ "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/tool/cutlass",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "sword", "onehanded" ]
+  },
+  {
+    "side": "Server",
+    "dependsOn": [{ "modid": "quiversfork" },{ "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/tool/cutlass",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*": "sabre_iron"
+    }
+  },
+  {
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "seafarer" }],
+    "file": "spearexpantion:itemtypes/tool/bartka",
+    "op": "addMerge", "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-copper":  "copper",
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-steel": "steel",
+      "*": "iron"
+    }
+  }
+]

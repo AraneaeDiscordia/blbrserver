@@ -5,8 +5,22 @@
     "file": "spearexpantion:itemtypes/tool/bartka",
     "op": "addMerge",
     "path": "/tags",
-    "value": [ "axe", "onehanded" ]
-    // broken
+    "value": ["tool", "tool-axe"]
+  },
+  {
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
+    "file": "spearexpantion:itemtypes/tool/bartka",
+    "op": "addMerge", "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*-tinbronze": "tinbronze",
+      "*-bismuthbronze": "bismuthbronze",
+      "*-blackbronze": "blackbronze",
+      "*-iron": "iron",
+      "*-meteoriciron": "meteoriciron",
+      "*-meteoricsteel": "steel",
+      "*-steel": "steel",
+      "*": "iron"
+    }
   },
   {
     "side": "Server",

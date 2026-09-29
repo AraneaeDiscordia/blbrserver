@@ -1,12 +1,12 @@
 [
   // disable wildcraftfruit overwriting the vanilla mashes.
     {
+        "side": "server",
         "dependsOn": [{ "modid": "expandedfoods" }, { "modid": "wildcraftfruit" }],
         "priority": 10,
         "file": "wildcraftfruit:patches/basegame-visual-changes.json",
         "op": "add",
         "path": "/44/enabled",
-        "value": false,
-        "side": "server"
+        "value": false
     }
 ]

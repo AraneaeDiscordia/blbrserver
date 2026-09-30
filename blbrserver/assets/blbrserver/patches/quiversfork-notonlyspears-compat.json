@@ -23,6 +23,37 @@
     }
   },
   {
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
+    "file": "quiversandsheaths:itemtypes/beltbags/tool-holster",
+    "op": "addMerge",
+    "path": "/behaviors/1/properties/transformByStoredItem",
+    "value": {
+      "spearexpantion:bartka-*": {
+        "applyStoredItemTranslation": false,
+        "applyStoredItemRotation": false,
+        "applyStoredItemScale": false,
+        "transform": {
+          "translation": {
+            "x": 0,
+            "y": -2.5,
+            "z": -1.8
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": 0.85
+        }
+      }  
+    }
+  },
+  {
     "side": "server",
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "spearexpantion" }],
     "file": "spearexpantion:itemtypes/tool/claymore",

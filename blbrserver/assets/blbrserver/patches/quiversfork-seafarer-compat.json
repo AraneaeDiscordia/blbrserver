@@ -1,6 +1,6 @@
 [
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" },{ "modid": "seafarer" } ],
     "file": "seafarer:itemtypes/tool/cutlass",
     "op": "addMerge",
@@ -8,7 +8,7 @@
     "value": [ "sword", "onehanded" ]
   },
   {
-    "side": "Server",
+    "side": "server",
     "dependsOn": [{ "modid": "quiversfork" },{ "modid": "seafarer" } ],
     "file": "seafarer:itemtypes/tool/cutlass",
     "op": "add",
@@ -19,7 +19,7 @@
   },
   {
     "dependsOn": [{ "modid": "quiversfork" }, { "modid": "seafarer" }],
-    "file": "spearexpantion:itemtypes/tool/bartka",
+    "file": "seafarer:itemtypes/tool/cutlass",
     "op": "addMerge", "path": "/attributes/MetalVariantCodeByType",
     "value": {
       "*-copper":  "copper",

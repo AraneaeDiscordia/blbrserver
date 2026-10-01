@@ -1,0 +1,17 @@
+[
+  // put the ritualapotheosis scrolls on the scroll shelves.
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "ritualapotheosis" } ],
+    "file": "ritualapotheosis:itemtypes/ritual-scroll.json",
+    "op": "addMerge",
+    "path": "/attributes",
+    "value": {
+      "scrollrackable": "true",
+      "onscrollrackTransform": {
+        "translation": {"x": -0.55, "y": -0.30, "z": 0.20},
+        "rotation": {"x": -45, "y": 180, "z": 0}
+      }
+    }
+  }
+]

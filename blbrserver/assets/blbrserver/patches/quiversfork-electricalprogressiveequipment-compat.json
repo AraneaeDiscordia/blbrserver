@@ -1,0 +1,80 @@
+[
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "electricalprogressiveequipment:itemtypes/armor/static-shield",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "shield" ]
+  },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "electricalprogressiveequipment:itemtypes/tool/eaxe",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": ["tool", "tool-axe"]
+  },
+  {
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "quiversandsheaths:itemtypes/beltbags/tool-holster",
+    "op": "addMerge",
+    "path": "/behaviors/1/properties/transformByStoredItem",
+    "value": {
+      "electricalprogressiveequipment:eaxe": {
+        "applyStoredItemTranslation": false,
+        "applyStoredItemRotation": false,
+        "applyStoredItemScale": false,
+        "transform": {
+          "translation": {"x": 0, "y": -0.5, "z": -0.8},
+          "scale": 0.75
+        }
+      }  
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "electricalprogressiveequipment:itemtypes/weapon/static-saber",
+    "op": "add",
+    "path": "/attributes/InSheathVariantCodeByType",
+    "value": {
+      "*": "sabre_iron"
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "electricalprogressiveequipment:itemtypes/weapon/static-saber",
+    "op": "addMerge",
+    "path": "/attributes/MetalVariantCodeByType",
+    "value": {
+      "*": "iron"
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "electricalprogressiveequipment:itemtypes/weapon/static-spear",
+    "op": "addMerge",
+    "path": "/tags",
+    "value": [ "spear" ]
+  },
+  {
+    "dependsOn": [{ "modid": "quiversfork" }, { "modid": "electricalprogressiveequipment" }],
+    "file": "quiversandsheaths:itemtypes/shoulder/back-sling",
+    "op": "addMerge",
+    "path": "/behaviors/1/properties/transformByStoredItem",
+    "value": {
+      "electricalprogressiveequipment:static-spear": {
+        "applyStoredItemTranslation": false,
+        "applyStoredItemRotation": false,
+        "applyStoredItemScale": false,
+        "transform": {
+          "translation": {"x": -10, "y": 0, "z": -1.5},
+          "scale": 0.85
+        }
+      }  
+    }
+  }
+]

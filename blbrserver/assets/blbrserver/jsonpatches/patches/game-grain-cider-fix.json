@@ -1,0 +1,10 @@
+[
+  {
+    "side": "server",
+    "priority": 10,
+    "file": "game:recipes/barrel/cider",
+    "op": "replace",
+    "path": "/2-6/output/litres",
+    "value": 0.8
+  }
+]

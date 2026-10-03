@@ -1,0 +1,32 @@
+{
+  "Priority": 5,
+  "Patches": [
+    {
+      "Code": "makebeer:beer-*",
+      "hydration": 750.0,
+      "hydrationByType": {
+        "makebeer:beer-regular": 750.0,
+        "makebeer:beer-light": 750.0,
+        "makebeer:beer-dark": 700.0,
+        "makebeer:beer-psychedelic": 650.0,
+        "makebeer:beer-mugwort": 650.0
+      }
+    },
+    {
+      "Code": "makebeer:hoppedwort-*",
+      "hydration": 650.0
+    },
+    {
+      "Code": "makebeer:malt-*",
+      "hydration": -30.0
+    },
+    {
+      "Code": "makebeer:sproutedrye",
+      "hydration": 10.0
+    },
+    {
+      "Code": "makebeer:toastedrye-*",
+      "hydration": -30.0
+    }
+  ]
+}

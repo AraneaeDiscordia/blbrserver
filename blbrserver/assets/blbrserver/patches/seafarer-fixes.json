@@ -1,0 +1,15 @@
+[
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/tool/cutlass",
+    "op": "addMerge",
+    "path": "/attributes/toolrackTransformByType",
+    "value": {
+      "cutlass-*": {
+        "translation": {"x": 0.45, "y": 0.5, "z": 0},
+        "rotation": {"x": 0, "y": 180, "z": 0}
+      }
+    }
+  }
+]

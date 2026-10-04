@@ -1,0 +1,56 @@
+[
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/0/file",
+    "value": "expandedfoods:recipes/cooking/augratin.json"
+   },
+    {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/1/file",
+    "value": "expandedfoods:recipes/cooking/augratin.json"
+   },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/2/file",
+    "value": "expandedfoods:recipes/cooking/pastahot.json"
+   },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/3/file",
+    "value": "expandedfoods:recipes/cooking/pastahot.json"
+   },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/4/file",
+    "value": "expandedfoods:recipes/cooking/riceandbeans.json"
+   },
+  {
+    "side": "server",
+    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "priority": 10,
+    "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
+    "op": "replace",
+    "path": "/5/file",
+    "value": "expandedfoods:recipes/cooking/riceandbeans.json"
+   }
+]

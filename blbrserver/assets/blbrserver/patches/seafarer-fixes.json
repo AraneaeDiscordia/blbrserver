@@ -1,4 +1,5 @@
 [
+  // fix cutlass appearance in toolrack
   {
     "side": "server",
     "dependsOn": [ { "modid": "seafarer" } ],

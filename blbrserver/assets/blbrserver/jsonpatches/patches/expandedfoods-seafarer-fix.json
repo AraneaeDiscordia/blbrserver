@@ -10,7 +10,7 @@
    },
     {
     "side": "server",
-    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "dependsOn": [{ "modid": "expandedfoods" },{ "modid": "seafarer" } ],
     "priority": 10,
     "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
     "op": "replace",
@@ -19,7 +19,7 @@
    },
   {
     "side": "server",
-    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "dependsOn": [{ "modid": "expandedfoods" },{ "modid": "seafarer" } ],
     "priority": 10,
     "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
     "op": "replace",
@@ -28,7 +28,7 @@
    },
   {
     "side": "server",
-    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "dependsOn": [{ "modid": "expandedfoods" },{ "modid": "seafarer" } ],
     "priority": 10,
     "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
     "op": "replace",
@@ -37,7 +37,7 @@
    },
   {
     "side": "server",
-    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "dependsOn": [{ "modid": "expandedfoods" },{ "modid": "seafarer" } ],
     "priority": 10,
     "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
     "op": "replace",
@@ -46,7 +46,7 @@
    },
   {
     "side": "server",
-    "dependsOn": [{ "modid": "seafarer" },{ "modid": "seafarer" } ],
+    "dependsOn": [{ "modid": "expandedfoods" },{ "modid": "seafarer" } ],
     "priority": 10,
     "file": "seafarer:patches/expandedfoods-fermented-vegs.json",
     "op": "replace",

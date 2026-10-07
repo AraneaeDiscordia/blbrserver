@@ -1,6 +1,7 @@
 {
   "Priority": 5,
   "Patches": [
+    // makebeer
     {
       "Code": "makebeer:beer-*",
       "hydration": 750.0,
@@ -28,5 +29,7 @@
       "Code": "makebeer:toastedrye-*",
       "hydration": -30.0
     }
+    
+    // soaplyeandbloom
   ]
 }

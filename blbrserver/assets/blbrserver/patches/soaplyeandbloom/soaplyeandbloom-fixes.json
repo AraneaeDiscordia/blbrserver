@@ -1,0 +1,50 @@
+[
+  // remove incorrect perishibleProps designation from teas
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" } ],
+    "file": "soaplyeandbloom:itemtypes/liquid/tea",
+    "op": "remove",
+    "path": "/perishableProps"
+  },
+  // set up correct transition properties for tea to rot
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" } ],
+    "file": "soaplyeandbloom:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/transitionableProps",
+    "value": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 1200 },
+        "transitionHours": { "avg": 48 },
+        "transitionedStack": {
+          "type": "item",
+          "code": "rot"
+        },
+        "transitionRatio": 0.005
+      }
+    ]
+  },
+  // set up transitional properties for oil to rot, if expanded foods exists and adds oil perishibility.
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "expandedfoods"}, { "modid": "soaplyeandbloom" } ],
+    "file": "soaplyeandbloom:itemtypes/liquid/oil",
+    "op": "addMerge",
+    "path": "/transitionableProps",
+    "value": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 5184 },
+        "transitionHours": { "avg": 5184 },
+        "transitionedStack": {
+          "type": "item",
+          "code": "rot"
+        },
+        "transitionRatio": 0.002
+      }
+    ]
+  }
+]

@@ -1,0 +1,153 @@
+[
+  // add expected tea variants from soaplyeandbloom to steepandbrew tea varieties
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/variantgroups/0/states",
+    "value": [ "calendula", "chamomile", "hibiscus", "lavender", "mint" ]
+  },
+  // add their expected textures to both places it expects them
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/textureByType",
+    "value": {
+      "*-calendula-*": { "base": "soaplyeandbloom:item/liquid/tea/calendulatea" },
+      "*-chamomile-*": { "base": "soaplyeandbloom:item/liquid/tea/chamomiletea" },
+      "*-hibiscus-*": { "base": "soaplyeandbloom:item/liquid/tea/hibiscustea" },
+      "*-lavender-*": { "base": "soaplyeandbloom:item/liquid/tea/lavendertea" },
+      "*-mint-*": { "base": "soaplyeandbloom:item/liquid/tea/minttea" }
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/waterTightContainerProps/textureByType",
+    "value": {
+      "*-calendula-*": { "base": "soaplyeandbloom:item/liquid/tea/calendulatea" },
+      "*-chamomile-*": { "base": "soaplyeandbloom:item/liquid/tea/chamomiletea" },
+      "*-hibiscus-*": { "base": "soaplyeandbloom:item/liquid/tea/hibiscustea" },
+      "*-lavender-*": { "base": "soaplyeandbloom:item/liquid/tea/lavendertea" },
+      "*-mint-*": { "base": "soaplyeandbloom:item/liquid/tea/minttea" }
+    }
+  },
+  // add their expected satietyByType
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/waterTightContainerProps/nutritionPropsPerLitre/satietyByType",
+    "value": {
+      "*-calendula-hot": 20,
+      "*-calendula-cold": 20,
+      "*-chamomile-hot": 20,
+      "*-chamomile-cold": 20,
+      "*-hibiscus-hot": 20,
+      "*-hibiscus-cold": 20,
+      "*-lavender-hot": 20,
+      "*-lavender-cold": 20,
+      "*-mint-hot": 20,
+      "*-mint-cold": 20
+    }
+  },
+  // add healing value to calendula
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" }, { "modid": "steepandbrew" } ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/waterTightContainerProps/nutritionPropsPerLitre/healthByType",
+    "value": {
+      "*-calendula-hot": 1,
+      "*-calendula-cold": 0.5
+    }
+  },
+  // add hod hydration levels
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"}, {"modid": "hydrateordiedrate"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/hydrationByType",
+    "value": {
+      "*-calendula-hot": 500,
+      "*-calendula-cold": 700,
+      "*-chamomile-hot": 500,
+      "*-chamomile-cold": 700,
+      "*-hibiscus-hot": 500,
+      "*-hibiscus-cold": 700,
+      "*-lavender-hot": 500,
+      "*-lavender-cold": 700,
+      "*-mint-hot": 500,
+      "*-mint-cold": 700
+    }
+  },
+  // add rot transition
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"}, {"modid": "hydrateordiedrate"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/transitionablePropsByType",
+    "value": {
+      "*-calendula-hot": [{ "type": "Perish", "freshHours": { "avg": 480 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-calendula-cold": [{ "type": "Perish", "freshHours": { "avg": 720 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-chamomile-hot": [{ "type": "Perish", "freshHours": { "avg": 480 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-chamomile-cold": [{ "type": "Perish", "freshHours": { "avg": 720 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-hibiscus-hot": [{ "type": "Perish", "freshHours": { "avg": 480 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-hibiscus-cold":[{ "type": "Perish", "freshHours": { "avg": 720 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-lavender-hot": [{ "type": "Perish", "freshHours": { "avg": 480 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-lavender-cold": [{ "type": "Perish", "freshHours": { "avg": 720 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-mint-hot": [{ "type": "Perish", "freshHours": { "avg": 480 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }],
+      "*-mint-cold": [{ "type": "Perish", "freshHours": { "avg": 720 }, "transitionHours": { "avg": 48 }, "transitionedStack": { "type": "item", "code": "game:rot" }, "transitionRatio": 0.005 }]
+    }
+  },
+  // disable existing recipes from soaplyeandbloom
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "soaplyeandbloom:recipes/cooking/tea",
+    "op": "add",
+    "path": "/0/enabled",
+    "value": false
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "soaplyeandbloom:recipes/cooking/tea",
+    "op": "add",
+    "path": "/1/enabled",
+    "value": false
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "soaplyeandbloom:recipes/cooking/tea",
+    "op": "add",
+    "path": "/2/enabled",
+    "value": false
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "soaplyeandbloom:recipes/cooking/tea",
+    "op": "add",
+    "path": "/3/enabled",
+    "value": false
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "soaplyeandbloom:recipes/cooking/tea",
+    "op": "add",
+    "path": "/4/enabled",
+    "value": false
+  }
+]

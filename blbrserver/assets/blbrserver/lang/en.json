@@ -1,3 +1,37 @@
 {
-    "hello": "hello world!"
+  // steepandbrew soaplyeandbloom compat additions
+  "steepandbrew:item-tea-calendula-hot": "Hot calendula tea",
+  "steepandbrew:itemdesc-tea-calendula-hot": "Takes the edge of your hunger. Makes you feel a little better. Quenches thirst. Provides some warmth. Does not taste orange.",
+  "steepandbrew:incontainer-item-tea-calendula-hot": "Hot calendula tea",
+  "steepandbrew:item-tea-calendula-cold": "Cold calendula tea",
+  "steepandbrew:itemdesc-tea-calendula-cold": "Takes the edge of your hunger. Makes you feel a little better. Quenches thirst. Cools you off and keeps the body cool for a while after drinking. Does not taste orange.",
+  "steepandbrew:incontainer-item-tea-calendula-cold": "Cold calendula tea",
+
+  "steepandbrew:item-tea-chamomile-hot": "Hot chamomile tea",
+  "steepandbrew:itemdesc-tea-chamomile-hot": "Takes the edge of your hunger. Quenches thirst. Provides some warmth.",
+  "steepandbrew:incontainer-item-chamomile-calendula-hot": "Hot chamomile tea",
+  "steepandbrew:item-tea-chamomile-cold": "Cold chamomile tea",
+  "steepandbrew:itemdesc-tea-chamomile-cold": "Takes the edge of your hunger. Quenches thirst. Cools you off and keeps the body cool for a while after drinking.",
+  "steepandbrew:incontainer-item-chamomile-cold": "Cold chamomile tea",
+
+  "steepandbrew:item-tea-hibiscus-hot": "Hot hibiscus tea",
+  "steepandbrew:itemdesc-tea-hibiscus-hot": "Takes the edge of your hunger. Quenches thirst. Provides some warmth.",
+  "steepandbrew:incontainer-item-hibiscus-calendula-hot": "Hot hibiscus tea",
+  "steepandbrew:item-tea-hibiscus-cold": "Cold hibiscus tea",
+  "steepandbrew:itemdesc-tea-hibiscus-cold": "Takes the edge of your hunger. Quenches thirst. Cools you off and keeps the body cool for a while after drinking.",
+  "steepandbrew:incontainer-item-hibiscus-cold": "Cold hibiscus tea",
+
+  "steepandbrew:item-tea-lavender-hot": "Hot lavender tea",
+  "steepandbrew:itemdesc-tea-lavender-hot": "Takes the edge of your hunger. Quenches thirst. Provides some warmth.",
+  "steepandbrew:incontainer-item-lavender-calendula-hot": "Hot lavender tea",
+  "steepandbrew:item-tea-lavender-cold": "Cold lavender tea",
+  "steepandbrew:itemdesc-tea-lavender-cold": "Takes the edge of your hunger. Quenches thirst. Cools you off and keeps the body cool for a while after drinking.",
+  "steepandbrew:incontainer-item-lavender-cold": "Cold lavender tea",
+
+  "steepandbrew:item-tea-mint-hot": "Hot mint tea",
+  "steepandbrew:itemdesc-tea-mint-hot": "Takes the edge of your hunger. Quenches thirst. Provides some warmth.",
+  "steepandbrew:incontainer-item-mint-calendula-hot": "Hot mint tea",
+  "steepandbrew:item-tea-mint-cold": "Cold mint tea",
+  "steepandbrew:itemdesc-tea-mint-cold": "Takes the edge of your hunger. Quenches thirst. Cools you off and keeps the body cool for a while after drinking.",
+  "steepandbrew:incontainer-item-mint-cold": "Cold mint tea"
 }

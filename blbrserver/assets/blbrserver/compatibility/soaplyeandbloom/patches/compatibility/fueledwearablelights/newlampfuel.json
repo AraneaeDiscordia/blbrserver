@@ -1,7 +1,7 @@
 [
   {
     "file": "fueledwearablelights:itemtypes/lantern.json",
-    "dependsOn": [ {"modid": "fueledwearablelights"} ],
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
     "op": "replace",
     "path": "/attributes/FuelCapacityHours",
     "value": 32,

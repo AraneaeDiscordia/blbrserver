@@ -1,0 +1,58 @@
+[
+  {
+    "file": "fueledwearablelights:itemtypes/lantern.json",
+    "dependsOn": [ {"modid": "fueledwearablelights"} ],
+    "op": "replace",
+    "path": "/attributes/FuelCapacityHours",
+    "value": 32,
+    "side": "server"
+  },
+  {
+    "file": "fueledwearablelights:itemtypes/lantern.json",
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
+    "op": "addmerge",
+    "path": "/attributes/FuelItems",
+    "value": {
+      "soaplyeandbloom:candle-*": 32
+    },
+    "side": "server"
+  },
+  {
+    "file": "fueledwearablelights:itemtypes/lamp.json",
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
+    "op": "addmerge",
+    "path": "/attributesByType/*-oillamp/FuelItems",
+    "value": {
+      "soaplyeandbloom:shea-butter": 4
+    },
+    "side": "server"
+  },
+  {
+    "file": "fueledwearablelights:itemtypes/lamp.json",
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
+    "op": "replace",
+    "path": "/attributesByType/*-candlelamp/FuelCapacityHours",
+    "value": 32,
+    "side": "server"
+  },
+  {
+    "file": "fueledwearablelights:itemtypes/lamp.json",
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
+    "op": "addmerge",
+    "path": "/attributesByType/*-candlelamp/FuelItems",
+    "value": {
+      "soaplyeandbloom:candle-*": 32
+    },
+    "side": "server"
+  },
+  {
+    "file": "fueledwearablelights:itemtypes/clayoillamp.json",
+    "dependsOn": [ { "modid": "fueledwearablelights" } ],
+    "op": "addmerge",
+    "path": "/attributes/FuelItems",
+    "value": {
+      "soaplyeandbloom:shea-butter": 6
+    },
+    "side": "server"
+  }
+]

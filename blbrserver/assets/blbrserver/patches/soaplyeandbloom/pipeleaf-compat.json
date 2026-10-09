@@ -1,0 +1,90 @@
+[
+	// pipeleaf variants for soaplyeandbloom herbs
+	{
+		"side": "server",
+		"dependsOn": [ { "modid": "pipeleaf"}, {"modid": "soaplyeandbloom"} ],
+		"file": "soaplyeandbloom:itemtypes/resource/flower",
+		"op": "addMerge",
+		"path": "/combustiblePropsByType",
+		"value": {
+			"*-calendula-*": {
+				"meltingPoint": 150,
+				"meltingDuration": 8,
+				"smeltedRatio": 1,
+				"smeltingType": "cook",
+				"smeltedStack": {"type": "item", "code": "pipeleaf:smokable-marigold-cured"},
+				"requiresContainer": false
+			}
+		}
+	},
+	{
+		"side": "server",
+		"dependsOn": [ { "modid": "pipeleaf"}, {"modid": "soaplyeandbloom"} ],
+		"file": "soaplyeandbloom:itemtypes/resource/flower",
+		"op": "addMerge",
+		"path": "/combustiblePropsByType",
+		"value": {
+			"*-chamomile-*": {
+				"meltingPoint": 150,
+				"meltingDuration": 8,
+				"smeltedRatio": 1,
+				"smeltingType": "cook",
+				"smeltedStack": {"type": "item", "code": "pipeleaf:smokable-chamomile-cured"},
+				"requiresContainer": false
+			}
+		}
+	},
+	{
+		"side": "server",
+		"dependsOn": [ { "modid": "pipeleaf"}, {"modid": "soaplyeandbloom"} ],
+		"file": "soaplyeandbloom:itemtypes/resource/flower",
+		"op": "addMerge",
+		"path": "/combustiblePropsByType",
+		"value": {
+			"*-lavender-*": {
+				"meltingPoint": 150,
+				"meltingDuration": 8,
+				"smeltedRatio": 1,
+				"smeltingType": "cook",
+				"smeltedStack": {"type": "item", "code": "pipeleaf:smokable-lavender-cured"},
+				"requiresContainer": false
+			}
+		}
+	},
+	{
+		"side": "server",
+		"dependsOn": [ { "modid": "pipeleaf"}, {"modid": "soaplyeandbloom"} ],
+		"file": "soaplyeandbloom:itemtypes/resource/flower",
+		"op": "addMerge",
+		"path": "/combustiblePropsByType",
+		"value": {
+			"*-mint-*": {
+				"meltingPoint": 150,
+				"meltingDuration": 8,
+				"smeltedRatio": 1,
+				"smeltingType": "cook",
+				"smeltedStack": {"type": "item", "code": "pipeleaf:smokable-mint-cured"},
+				"requiresContainer": false
+			}
+		}
+	},
+	// ensure the spit is used, graphically
+	{
+		"side": "server",
+		"dependsOn": [ {"modid": "pipeleaf"}, {"modid": "soaplyeandbloom"} ],
+		"file": "soaplyeandbloom:itemtypes/resource/flower",
+		"op": "addMerge",
+		"path": "/attributes",
+		"value": {
+			"inFirePitProps": {
+				"transform": {
+					"scale": 0.8,
+					"origin": {"x": 0.5, "y": 0.5, "z": 0.5},
+					"translation": {"x": 0, "y": -0.51, "z": 0},
+					"rotation": {"x": 180, "y": 0, "z": 0}
+				},
+				"useFirepitModel": "Spit"
+			}
+		}
+	}
+]

@@ -12,5 +12,109 @@
         "rotation": {"x": 0, "y": 180, "z": 0}
       }
     }
+  },
+  // fix waterskin on ground
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/leather/waterskin",
+    "op": "addMerge",
+    "path": "/groundTransform",
+    "value": {
+      "origin": {"x": 0.5, "y": 0, "z": 0},
+      "translation": {"x": -0.1, "y": -0.1, "z": 0},
+      "scale": 0.75
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/leather/waterskin",
+    "op": "addMerge",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {"x": -0.1, "y": -0.1, "z": 0},
+      "scale": 0.75
+    }
+  },
+  // fix waterskin in hand
+  {
+	  "side": "server",
+	  "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/leather/waterskin",
+    "op": "addMerge",
+	  "path": "/tpHandTransform",
+	  "value": {
+		  "translation": { "x": -0.8, "y": -0.6, "z": -0.6 },
+		  "rotation": { "x": 0, "y": -180, "z": 13 },
+		  "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		  "scale": 0.8
+	  }
+  },
+  // fix scale of amphora (raw and fired) in gui
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora",
+    "op": "addMerge",
+    "path": "/guiTransform/scale",
+    "value": 1.25
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora-raw",
+    "op": "addMerge",
+    "path": "/guiTransform/scale",
+    "value": 1.25
+  },
+  // fix position of amphora (raw and fired) on ground
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora",
+    "op": "addMerge",
+    "path": "/groundTransform",
+    "value": {
+      "translation": {"x": -0.05, "y": 0, "z": 0}
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora-raw",
+    "op": "addMerge",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {"x": 0, "y": -0.13, "z": 0},
+        "scale": 0.75
+      }
+    }
+  },
+  // fix position of amphora (raw and fired) in hand
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora",
+    "op": "replace",
+    "path": "/tpHandTransform",
+    "value": {
+      "translation": { "x": -1.1, "y": -1.3, "z": -0.89 },
+		  "rotation": { "x": 5, "y": -10, "z": -15 },
+		  "scale": 0.55
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:blocktypes/clay/amphora-raw",
+    "op": "addMerge",
+    "path": "/tpHandTransform",
+    "value": {
+      "translation": { "x": -1.1, "y": -1.3, "z": -0.89 },
+		  "rotation": { "x": 5, "y": -10, "z": -15 },
+		  "scale": 0.55
+    }
   }
 ]

@@ -33,5 +33,16 @@
   "steepandbrew:incontainer-item-mint-calendula-hot": "Hot mint tea",
   "steepandbrew:item-tea-mint-cold": "Cold mint tea",
   "steepandbrew:itemdesc-tea-mint-cold": "Takes the edge of your hunger. Quenches thirst. Cools you off and keeps the body cool for a while after drinking.",
-  "steepandbrew:incontainer-item-mint-cold": "Cold mint tea"
+  "steepandbrew:incontainer-item-mint-cold": "Cold mint tea",
+
+  // alchemy soaplyeandbloom compat additions
+  "soaplyeandbloom:item-cuttings-chamomile-raw": "Raw Cuttings (chamomile)",
+  "soaplyeandbloom:item-cuttings-chamomile-dried": "Dried Cuttings (chamomile)",
+  "soaplyeandbloom:item-cuttings-chamomile-cooked": "Cooked Cuttings (chamomile)",
+  "soaplyeandbloom:item-cuttings-lavender-raw": "Raw Cuttings (lavender)",
+  "soaplyeandbloom:item-cuttings-lavender-dried": "Dried Cuttings (lavender)",
+  "soaplyeandbloom:item-cuttings-lavender-cooked": "Cooked Cuttings (lavender)",
+  "soaplyeandbloom:item-cuttings-mint-raw": "Raw Cuttings (mint)",
+  "soaplyeandbloom:item-cuttings-mint-dried": "Dried Cuttings (mint)",
+  "soaplyeandbloom:item-cuttings-mint-cooked": "Cooked Cuttings (mint)"
 }

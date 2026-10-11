@@ -63,7 +63,7 @@
     } 
   },
   // rotate the dried cuttings to conform to existing convention, prevent wildcard from overwriting setting
-  { //broken
+  {
     "side": "server",
     "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
     "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",

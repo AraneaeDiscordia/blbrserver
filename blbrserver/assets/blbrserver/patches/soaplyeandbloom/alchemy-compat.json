@@ -1,0 +1,147 @@
+[
+  // add missing variants to the cuttings definition
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "addMerge",
+    "path": "/variantgroups/0/states",
+    "value": [
+      "chamomile", "lavender", "mint"
+    ]
+  },
+  // move the existing shapes, hook up missing shapes, add the wildcards back to the end
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "move",
+    "frompath": "/shapeByType",
+    "path": "/temp"
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "addMerge",
+    "path": "/shapeByType",
+    "value": {
+      "*-lavender-*": { "base": "alchemy:item/cut_stacked_herb_bundle" },
+      "*-mint-*": {"base": "alchemy:item/cut_blue_herb_bundle"}
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "move",
+    "frompath": "/temp",
+    "path": "/shapeByType"
+  },
+  // hook up missing textures
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "addMerge",
+    "path": "/texturesByType",
+    "value": {
+      "*-chamomile-*": { "chamomile": { "base": "soaplyeandbloom:block/plant/crop/{flower}" } },
+      "*-lavender-*": { "flower": { "base": "game:block/plant/flower/petal/lupine/blue1-a" } },
+      "*-mint-*": { "flower": { "base": "game:block/plant/flower/petal/horsetail1" } }
+    }
+  },
+  // rotate the cooked cuttings to conform to the existing convention
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "addMerge",
+    "path": "/guiTransformByType/*-cooked",
+    "value": {
+      "rotation": { "x": 0, "y": 0, "z": 45 }
+    } 
+  },
+  // rotate the dried cuttings to conform to existing convention, prevent wildcard from overwriting setting
+  { //broken
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "move",
+    "frompath": "/guiTransformByType/*",
+    "path": "/temp"
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "addMerge",
+    "path": "/guiTransformByType/*-dried",
+    "value": {
+      "translation": { "x": 0, "y": -2, "z": 0},
+      "origin": {"x": 0.5, "y": 0.25, "z": 0.5},
+      "scale": 3,
+      "rotation": { "x": 0, "y": 0, "z": -40 }
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/itemtypes/soapandlyeflowercuttings",
+    "op": "move",
+    "frompath": "/temp",
+    "path": "/guiTransformByType/*"
+  },
+  // fix the shearing recipes
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-cuttings",
+    "op": "addMerge",
+    "path": "/0/output/code",
+    "value": "soaplyeandbloom:cuttings-{flower}-raw"
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" }, { "modid": "alchemy" } ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-cuttings",
+    "op": "addMerge",
+    "path": "/2/output/code",
+    "value": "soaplyeandbloom:cuttings-{flower}-dried"
+  },
+  // fix the potent oil base
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-potent-oil-base",
+    "op": "addMerge",
+    "path": "/1/ingredients/F/code",
+    "value": "soaplyeandbloom:cuttings-chamomile-cooked"
+  },
+  // fix the regen base
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-regen-base",
+    "op": "addMerge",
+    "path": "/1/ingredients/F/code",
+    "value": "soaplyeandbloom:cuttings-lavender-cooked"
+  },
+  // fix the speed base
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-speed-base",
+    "op": "addMerge",
+    "path": "/1/ingredients/H/code",
+    "value": "soaplyeandbloom:cuttings-chamomile-cooked"
+  },
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "alchemy"} ],
+    "file": "soaplyeandbloom:compatibility/alchemy/recipes/grid/soapandlye-speed-base",
+    "op": "addMerge",
+    "path": "/1/ingredients/F/code",
+    "value": "soaplyeandbloom:cuttings-mint-cooked"
+  }
+]

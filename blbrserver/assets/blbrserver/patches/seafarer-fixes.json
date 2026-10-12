@@ -116,5 +116,49 @@
 		  "rotation": { "x": 5, "y": -10, "z": -15 },
 		  "scale": 0.55
     }
+  },
+  // fix the gui position of dried chili
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/food/driedchili",
+    "op": "addMerge",
+    "path": "/guiTransform",
+    "value": {
+      "translation": { "x": -6, "y": 17, "z": 0 },
+      "rotation": { "x": 171, "y": -122, "z": 28 },
+      "origin": { "x": 0.5, "y": 0.05, "z": 0.5299 },
+      "scale": 4.3
+    }
+  },
+  // fix the gui position of the fermented vegetables
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/food/fermentedvegetable",
+    "op": "addMerge",
+    "path": "/guiTransform",
+    "value": {
+      "translation": { "x": -5, "y": 14, "z": 0 },
+      "rotation": { "x": 171, "y": -122, "z": 28 },
+      "origin": { "x": 0.5, "y": 0.05, "z": 0.5299 },
+      "scale": 4.3
+    }
+  },
+  // give fermented onion its own gui position
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "seafarer" } ],
+    "file": "seafarer:itemtypes/food/fermentedvegetable",
+    "op": "addMerge",
+    "path": "/guiTransformByType",
+    "value": {
+      "*-onion": {
+        "translation": { "x": -1, "y": 6, "z": 0 },
+        "rotation": { "x": 171, "y": -122, "z": 28 },
+        "origin": { "x": 0.5, "y": 0.05, "z": 0.5299 },
+        "scale": 4.3
+      }
+    }
   }
 ]

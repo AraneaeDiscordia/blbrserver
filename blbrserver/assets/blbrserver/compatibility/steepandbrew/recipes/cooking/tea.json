@@ -1,5 +1,6 @@
 [
 	{
+		"dependsOn": [ {"modid": "soaplyeandbloom"} ],
 		"code": "tea-calendula",
 		"perishableProps": {
 			"freshHours": { "avg": 480 },
@@ -42,6 +43,7 @@
 		]
 	},
 	{
+		"dependsOn": [ {"modid": "soaplyeandbloom"} ],
 		"code": "tea-chamomile",
 		"perishableProps": {
 			"freshHours": { "avg": 480 },
@@ -84,6 +86,7 @@
 		]
 	},
 	{
+		"dependsOn": [ {"modid": "soaplyeandbloom"} ],
 		"code": "tea-hibiscus",
 		"perishableProps": {
 			"freshHours": { "avg": 480 },
@@ -126,6 +129,7 @@
 		]
 	},
 	{
+		"dependsOn": [ {"modid": "soaplyeandbloom"} ],
 		"code": "tea-lavender",
 		"perishableProps": {
 			"freshHours": { "avg": 480 },
@@ -168,6 +172,7 @@
 		]
 	},
 	{
+		"dependsOn": [ {"modid": "soaplyeandbloom"} ],
 		"code": "tea-mint",
 		"perishableProps": {
 			"freshHours": { "avg": 480 },

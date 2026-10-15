@@ -1,0 +1,15 @@
+[
+  // fix skipvariants
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "alchemy"}, {"modid": "pipeleaf"} ],
+    "file": "alchemy:itemtypes/flowercutting",
+    "op": "addMerge",
+    "path": "/skipVariants",
+    "value": [
+      "*-ghostpipewhite-*",
+      "*-ghostpipepink-*",
+      "*-ghostpipered-*"
+    ]
+  }
+]

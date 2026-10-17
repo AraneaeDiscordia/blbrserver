@@ -1,0 +1,39 @@
+[
+  // fix the recipe conflict with wildcraft berry dyes and fruit starter
+  // blueberry
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "makebeer"}, {"modid": "wildcraftfruit"} ],
+    "file": "wildcraftfruit:recipes/barrel/wildcraft_dyes",
+    "op": "addMerge",
+    "path": "/10/ingredients/1/quantity",
+    "value": 3
+  },
+  // raspberry
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "makebeer"}, {"modid": "wildcraftfruit"} ],
+    "file": "wildcraftfruit:recipes/barrel/wildcraft_dyes",
+    "op": "addMerge",
+    "path": "/13/ingredients/1/quantity",
+    "value": 3
+  },
+  // cranberry
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "makebeer"}, {"modid": "wildcraftfruit"} ],
+    "file": "wildcraftfruit:recipes/barrel/wildcraft_dyes",
+    "op": "addMerge",
+    "path": "/14/ingredients/1/quantity",
+    "value": 3
+  },
+  // beautyberry
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "makebeer"}, {"modid": "wildcraftfruit"} ],
+    "file": "wildcraftfruit:recipes/barrel/wildcraft_dyes",
+    "op": "addMerge",
+    "path": "/15/ingredients/1/quantity",
+    "value": 3
+  }
+]

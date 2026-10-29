@@ -69,6 +69,33 @@
       "*-calendula-cold": 0.5
     }
   },
+  // move the cold wildcard, add mint's custom value, move the wildcard back
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" }, { "modid": "steepandbrew" } ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "move",
+    "path": "/temp",
+    "frompath": "/attributes/coolingByType/*-cold"
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" }, { "modid": "steepandbrew" } ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/coolingByType",
+    "value": {
+      "*-mint-cold": 2
+    }
+  },
+  {
+    "side": "server",
+    "dependsOn": [ { "modid": "soaplyeandbloom" }, { "modid": "steepandbrew" } ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "move",
+    "path": "/attributes/coolingByType/*-cold",
+    "frompath": "/temp"
+  },
   // add hod hydration levels
   {
     "side": "server",
@@ -89,10 +116,30 @@
       "*-mint-cold": 700
     }
   },
+  // add effects to teas
+  {
+    "side": "server",
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
+    "file": "steepandbrew:itemtypes/liquid/tea",
+    "op": "addMerge",
+    "path": "/attributes/steepandbrewPropsByType",
+    "value": {
+      "*-calendula-hot": { "stabilityGain": 0.15 },
+      "*-calendula-cold": { "stabilityGain": 0.075 },
+      "*-chamomile-hot": { "stabilityGain": 0.25 },
+      "*-chamomile-cold": { "stabilityGain": 0.125 },
+      "*-hibiscus-hot": { "stabilityGain": 0.15 },
+      "*-hibiscus-cold": { "stabilityGain": 0.075 },
+      "*-lavender-hot": { "stabilityGain": 0.15 },
+      "*-lavender-cold": { "stabilityGain": 0.075 },
+      "*-mint-hot": { "stabilityGain": 0.15 },
+      "*-mint-cold": { "stabilityGain": 0.075 }
+    }
+  },
   // add rot transition
   {
     "side": "server",
-    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"}, {"modid": "hydrateordiedrate"} ],
+    "dependsOn": [ {"modid": "soaplyeandbloom"}, {"modid": "steepandbrew"} ],
     "file": "steepandbrew:itemtypes/liquid/tea",
     "op": "addMerge",
     "path": "/transitionablePropsByType",

@@ -1,0 +1,52 @@
+[
+	{
+		"code": "tea-calendula-cold",
+		"dependsOn": [{"modid": "soaplyeandbloom"}],
+		"sealHours": 16,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "soaplyeandbloom:herb-calendula-dried", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "steepandbrew:tea-calendula-cold", "litres": 1 }
+	},
+	{
+		"code": "tea-chamomile-cold",
+		"dependsOn": [{"modid": "soaplyeandbloom"}],
+		"sealHours": 16,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "soaplyeandbloom:herb-chamomile-dried", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "steepandbrew:tea-chamomile-cold", "litres": 1 }
+	},
+	{
+		"code": "tea-hibiscus-cold",
+		"dependsOn": [{"modid": "soaplyeandbloom"}],
+		"sealHours": 16,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "soaplyeandbloom:herb-hibiscus-dried", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "steepandbrew:tea-hibiscus-cold", "litres": 1 }
+	},
+	{
+		"code": "tea-lavender-cold",
+		"dependsOn": [{"modid": "soaplyeandbloom"}],
+		"sealHours": 16,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "soaplyeandbloom:herb-lavender-dried", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "steepandbrew:tea-lavender-cold", "litres": 1 }
+	},
+	{
+		"code": "tea-mint-cold",
+		"dependsOn": [{"modid": "soaplyeandbloom"}],
+		"sealHours": 16,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "soaplyeandbloom:herb-mint-dried", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "steepandbrew:tea-mint-cold", "litres": 1 }
+	}
+]
